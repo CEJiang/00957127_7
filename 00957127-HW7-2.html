@@ -71,6 +71,7 @@
             output += "<th>Year</th>";
             output += "<th>URL</th><tr>";
             display.innerHTML = output;
+            alert("All items were removed!");
         }
         function setTable()
         {
@@ -87,7 +88,7 @@
                 output += "<tr><td>" + tmp1.title + "</td>";
                 output += "<td>" + tmp1.author + "</td>";
                 output += "<td>" + tmp1.year + "</td>";
-                output += "<td>" + tmp1.url + "</td></tr>";
+                output += "<td><a href = \"" + tmp1.url + "\" target = \"_blank\">" + tmp1.url + "</a></td></tr>";
             }
             console.log(output);
             output += "</table>";
@@ -117,5 +118,4 @@
     <div id="display">
     </div>
 </body>
-
 </html>
