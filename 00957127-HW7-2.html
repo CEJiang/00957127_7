@@ -46,13 +46,7 @@
             removeButton = document.getElementById("removeAllButton");
             removeButton.addEventListener("click", remove, false);
             display = document.getElementById("display");
-            let output = "";
-            output += "<table>";
-            output += "<tr><th>Title</th>";
-            output += "<th>Author</th>";
-            output += "<th>Year</th>";
-            output += "<th>URL</th><tr>";
-            display.innerHTML = output;
+            setTable();
         }
         function add()
         {
@@ -105,6 +99,7 @@
 </head>
 
 <body>
+    <a href="https://cejiang.github.io/00957127_7/00957127-HW7-2.html">Github link</a>
     <form action="#">
         <p>
             <label>Book Title: <input type="text" id = "book"></label>
